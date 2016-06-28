@@ -424,7 +424,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
 section {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 2rem;
+  height: 640px; }
+
+footer {
   text-align: center; }
 
 /* ==========================================================================
