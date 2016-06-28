@@ -15,6 +15,5 @@ $(function() {
                 $('footer').delay(600).animate({ height : 0 });
             }
         },
-    })
-    $.fn.fullpage.silentMoveTo(13)
+    });
 })
