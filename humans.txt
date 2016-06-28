@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Chris Applegate (@chrisapplegate) http://www.qwghlm.co.uk/
+
+# THANKS
+
+    Alvaro Trigo http://alvarotrigo.com/fullPage/
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JavaScript & jQuery

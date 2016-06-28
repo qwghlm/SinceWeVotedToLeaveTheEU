@@ -5,7 +5,8 @@ $(function() {
     $('#days-since-referendum').html(days);
 
     $('main').fullpage({
-        sectionSelector : 'section'
+        sectionSelector : 'section',
+        scrollingSpeed : 600,
     });
 
 })

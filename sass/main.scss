@@ -18,6 +18,103 @@ html {
     line-height: 1.4;
 }
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: #1F242A;
+    color: #FAFAFF;
+}
+
+a {
+    color: #FAFAFF;
+
+    .fa {
+        margin-left: 0.2em;
+        font-size: 95%;
+    }
+}
+
+section {
+    text-align: center;
+    font-size: 3rem;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:nth-child(3n+2) {
+        background-color: #0D324D
+    }
+    &:nth-child(3n+3) {
+        background-color: #0D0809;
+    }
+
+    .section-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 5rem;
+    }
+
+    small {
+        // color: darken(#FAFAFF, 3.0)
+    }
+
+    a {
+        @include transition(opacity 0.3s ease-in);
+        opacity: 0.5;
+        &:hover {
+            opacity: 1.0;
+        }
+    }
+}
+
+.photo-credit {
+    font-size: 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@mixin dimmed-background($imageName, $dimness : 0.4) {
+    background-image: linear-gradient( rgba(0, 0, 0, $dimness), rgba(0, 0, 0, $dimness) ), url('../img/backgrounds/' + $imageName + '.jpg');
+}
+
+#eu-flag {
+    @include dimmed-background('eu-flag')
+}
+#stock-market {
+    @include dimmed-background('stock-market')
+}
+#nigel-farage {
+    @include dimmed-background('nigel-farage')
+}
+#david-cameron {
+    @include dimmed-background('david-cameron', 0.5)
+}
+#fish {
+    @include dimmed-background('fish', 0.5)
+}
+#hate-crime {
+    @include dimmed-background('hate-crime', 0.5)
+}
+
+
+
+footer {
+    text-align: center;
+
+    a {
+        color : #0CCE6B;
+    }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -81,76 +178,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    background-color: #1F242A;
-    color: #FAFAFF;
-}
-
-a {
-    color: #FAFAFF;
-
-    .fa {
-        margin-left: 0.2em;
-    }
-}
-
-section {
-    text-align: center;
-    font-size: 3rem;
-
-    &:nth-child(3n+2) {
-        background-color: #0D324D
-    }
-    &:nth-child(3n+3) {
-        background-color: #0D0809;
-    }
-
-    .section-content {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 0 5rem;
-    }
-
-    small {
-        // color: darken(#FAFAFF, 3.0)
-    }
-
-    a {
-        @include transition(opacity 0.3s ease-in);
-
-        opacity: 0.5;
-        &:hover {
-            opacity: 1.0;
-        }
-    }
-}
-
-footer {
-    text-align: center;
-
-    a {
-        color : #0CCE6B;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

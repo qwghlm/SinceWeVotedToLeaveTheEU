@@ -366,6 +366,74 @@ html {
   font-size: 1em;
   line-height: 1.4; }
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #1F242A;
+  color: #FAFAFF; }
+
+a {
+  color: #FAFAFF; }
+  a .fa {
+    margin-left: 0.2em;
+    font-size: 95%; }
+
+section {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  section:nth-child(3n+2) {
+    background-color: #0D324D; }
+  section:nth-child(3n+3) {
+    background-color: #0D0809; }
+  section .section-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 5rem; }
+  section a {
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+    opacity: 0.5; }
+    section a:hover {
+      opacity: 1.0; }
+
+.photo-credit {
+  font-size: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+#eu-flag {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/eu-flag.jpg"); }
+
+#stock-market {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/stock-market.jpg"); }
+
+#nigel-farage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/nigel-farage.jpg"); }
+
+#david-cameron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/david-cameron.jpg"); }
+
+#fish {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/fish.jpg"); }
+
+#hate-crime {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/hate-crime.jpg"); }
+
+footer {
+  text-align: center; }
+  footer a {
+    color: #0CCE6B; }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -418,45 +486,6 @@ fieldset {
  */
 textarea {
   resize: vertical; }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background-color: #1F242A;
-  color: #FAFAFF; }
-
-a {
-  color: #FAFAFF; }
-  a .fa {
-    margin-left: 0.2em; }
-
-section {
-  text-align: center;
-  font-size: 3rem; }
-  section:nth-child(3n+2) {
-    background-color: #0D324D; }
-  section:nth-child(3n+3) {
-    background-color: #0D0809; }
-  section .section-content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 5rem; }
-  section a {
-    -webkit-transition: opacity 0.3s ease-in;
-    -moz-transition: opacity 0.3s ease-in;
-    transition: opacity 0.3s ease-in;
-    opacity: 0.5; }
-    section a:hover {
-      opacity: 1.0; }
-
-footer {
-  text-align: center; }
-  footer a {
-    color: #0CCE6B; }
 
 /* ==========================================================================
    Helper classes
