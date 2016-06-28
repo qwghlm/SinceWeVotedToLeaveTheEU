@@ -1,4 +1,5 @@
 @import '_normalize';
+@import "bourbon/bourbon";
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -13,8 +14,6 @@
    ========================================================================== */
 
 html {
-    color: #eee;
-    background-color: #333333;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -90,19 +89,57 @@ textarea {
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    background-color: #1F242A;
+    color: #FAFAFF;
+}
+
+a {
+    color: #FAFAFF;
+
+    .fa {
+        margin-left: 0.2em;
+    }
 }
 
 section {
     text-align: center;
     font-size: 3rem;
-    padding: 0 2rem;
-    height: 640px;
+
+    &:nth-child(3n+2) {
+        background-color: #0D324D
+    }
+    &:nth-child(3n+3) {
+        background-color: #0D0809;
+    }
+
+    .section-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 5rem;
+    }
+
+    small {
+        // color: darken(#FAFAFF, 3.0)
+    }
+
+    a {
+        @include transition(opacity 0.3s ease-in);
+
+        opacity: 0.5;
+        &:hover {
+            opacity: 1.0;
+        }
+    }
 }
 
 footer {
     text-align: center;
-}
 
+    a {
+        color : #0CCE6B;
+    }
+}
 
 
 
