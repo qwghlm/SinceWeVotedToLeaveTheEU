@@ -7,5 +7,14 @@ $(function() {
     $('main').fullpage({
         sectionSelector : 'section',
         scrollingSpeed : 600,
-    });
+        onLeave : function(index, nextIndex, direction) {
+            if (index === $('section').length - 1) {
+                $('footer').delay(600).animate({ height : "4em" });
+            }
+            else {
+                $('footer').delay(600).animate({ height : 0 });
+            }
+        },
+    })
+    $.fn.fullpage.silentMoveTo(13)
 })

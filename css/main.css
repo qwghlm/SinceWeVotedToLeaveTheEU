@@ -462,8 +462,8 @@ footer {
   position: absolute;
   z-index: 1000;
   bottom: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 0;
+  line-height: 4em;
   vertical-align: middle; }
   footer a {
     color: #0CCE6B; }

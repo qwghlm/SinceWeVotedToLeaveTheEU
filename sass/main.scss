@@ -159,8 +159,8 @@ footer {
     z-index: 1000;
     bottom: 0;
 
-    height: 60px;
-    line-height: 60px;
+    height: 0; //4em;
+    line-height: 4em;
     vertical-align: middle;
 }
 
