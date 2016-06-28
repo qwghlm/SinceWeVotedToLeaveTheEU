@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
+    // Load the plugin that provides the "shell" task.
     grunt.loadNpmTasks('grunt-shell');
 
     // Default task(s).
