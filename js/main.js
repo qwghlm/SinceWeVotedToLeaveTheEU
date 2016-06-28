@@ -4,4 +4,8 @@ $(function() {
     var days = Math.floor((new Date().getTime() - referendumDay)/(24*3600*1000));
     $('#days-since-referendum').html(days);
 
+    $('main').fullpage({
+        sectionSelector : 'section'
+    });
+
 })
