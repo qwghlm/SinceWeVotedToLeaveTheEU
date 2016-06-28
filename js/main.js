@@ -8,5 +8,4 @@ $(function() {
         sectionSelector : 'section',
         scrollingSpeed : 600,
     });
-
 })

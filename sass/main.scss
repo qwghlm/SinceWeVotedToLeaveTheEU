@@ -13,6 +13,9 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -31,6 +34,11 @@ body {
 
 a {
     color: #FAFAFF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     .fa {
         margin-left: 0.2em;
@@ -39,6 +47,7 @@ a {
 }
 
 section {
+
     text-align: center;
     font-size: 3rem;
 
@@ -53,6 +62,11 @@ section {
     }
     &:nth-child(3n+3) {
         background-color: #0D0809;
+    }
+
+    &.has-picture {
+        -webkit-text-stroke: #333 0.4px;
+        -moz-text-stroke: #333 0.4px;
     }
 
     .section-content {
@@ -82,6 +96,30 @@ section {
     right: 10px;
 }
 
+.social-share-wrapper {
+    width: 33%;
+    min-width: 200px;
+    margin: 1em auto 0;
+    padding-bottom: 1em;
+
+    .social-share {
+        width: 50%;
+        padding: 0;
+        float: left;
+        line-height: 0;
+    }
+
+    .social-share-twitter {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .social-share-facebook {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
 @mixin dimmed-background($imageName, $dimness : 0.4) {
     background-image: linear-gradient( rgba(0, 0, 0, $dimness), rgba(0, 0, 0, $dimness) ), url('../img/backgrounds/' + $imageName + '.jpg');
 }
@@ -108,11 +146,22 @@ section {
 
 
 footer {
+
     text-align: center;
+    width: 100%;
+    background-color: #000;
 
     a {
         color : #0CCE6B;
     }
+
+    position : absolute;
+    z-index: 1000;
+    bottom: 0;
+
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
 }
 
 /*

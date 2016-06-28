@@ -8,29 +8,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta property="og:title" content="Since we voted to leave the EU..." />
-        <meta property="og:description" content="How has voting to leave the EU changed things?" />
-        <meta property="og:image" content="" />
+        <meta property="og:description" content="On June 26th we (as a nation) voted to leave the EU. What's happened since then?" />
+        <meta property="og:image" content="/img/backgrounds/nigel-farage.jpg" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:title" content="Since we voted to leave the EU..." />
-        <meta name="twitter:card" content="How has voting to leave the EU changed things?" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:card" content="On June 26th we (as a nation) voted to leave the EU. What's happened since then?" />
+        <meta name="twitter:image" content="/img/backgrounds/nigel-farage.jpg" />
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
+        <link rel="icon" href="favicon-96x96.png">
+
     </head>
     <body>
 
         <main class="container">
 
-            <section id="eu-flag">
+            <section id="eu-flag" class="has-picture">
                 <div class="section-content">
                     Since we voted to leave the EU...
                 </div>
@@ -50,7 +52,7 @@
                 </div>
             </section>
 
-            <section id="stock-market">
+            <section id="stock-market" class="has-picture">
                 <div class="section-content">
                     Global stock markets lost US$2 trillion of value in a single day
 
@@ -139,7 +141,7 @@
 
             </section>
 
-            <section id="fish">
+            <section id="fish" class="has-picture">
                 <div class="section-content">
                     Our fishing industry has been told <em>not</em> to expect larger quotas
 
@@ -181,26 +183,39 @@
 
             <section id="">
                 <div class="section-content">
-                    Article 50 of the Lisbon Treaty has not yet been triggered
-                </div>
-
-            </section>
-
-            <section id="">
-                <div class="section-content">
                     All this, in <span id="days-since-referendum">at least 5</span> days since the referendum
                 </div>
+            </section>
+
+            <section id="end">
+                <div class="section-content">
+                    Oh, and Article 50 of the Lisbon Treaty has still not yet been triggered
+
+                    <div class="social-share-wrapper">
+                        <div class="social-share social-share-twitter">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-text="On June 26th we voted to leave the EU. What's happened since then?" data-related="chrisapplegate">Tweet</a>
+                        </div>
+
+                        <div class="social-share social-share-facebook">
+                            <div class="fb-like" data-href="http://sincewevotedtoleavethe.eu/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
 
         </main>
 
         <footer>
 
-            Made by <a href="https://twitter.com/chrisapplegate">@chrisapplegate</a>
+            Made by <a href="https://twitter.com/chrisapplegate">@chrisapplegate</a>.
 
             Have a suggestion? Make a pull request on <a href="https://github.com/qwghlm/SinceWeVotedToLeaveTheEU">Github</a>, or yell at me on Twitter
 
         </footer>
+
+        <div id="fb-root"></div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/jquery.fullpage.min.js"></script>
@@ -215,5 +230,16 @@
           ga('create', 'UA-80047703-1', 'auto');
           ga('send', 'pageview');
         </script>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=677481149036509";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
     </body>
 </html>
