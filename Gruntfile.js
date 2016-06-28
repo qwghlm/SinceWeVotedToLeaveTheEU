@@ -2,17 +2,30 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
+
         shell : {
             serve : {
                 command : 'python -mSimpleHTTPServer'
             }
+        },
+
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    './css/main.css': './sass/main.scss'
+                }
+            }
         }
+
     });
 
-    // Load the plugin that provides the "shell" task.
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-sass');
 
-    // Default task(s).
+    grunt.registerTask('default', ['sass']);
     grunt.registerTask('serve', ['shell:serve']);
 
 };
