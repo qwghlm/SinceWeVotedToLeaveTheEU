@@ -1,0 +1,9 @@
+{
+  "name": "since-we-voted-to-leave-the-eu",
+  "version": "0.0.1",
+  "repository": "https://github.com/qwghlm/SinceWeVotedToLeaveTheEU",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-shell": "^1.3.0"
+  }
+}
