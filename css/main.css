@@ -424,6 +424,9 @@ section {
       font-size: 2rem; }
       section .section-content {
         padding: 0 1rem; } }
+  section small {
+    display: inline-block;
+    margin-top: 0.5em; }
   section a {
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
@@ -455,26 +458,61 @@ section {
     text-align: left;
     padding-left: 10px; }
 
-#eu-flag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/eu-flag.jpg"); }
+@media screen and (min-width: 481px) {
+  #eu-flag {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/eu-flag.jpg"); } }
 
-#stock-market {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/stock-market.jpg"); }
+@media screen and (max-width: 480px) {
+  #eu-flag {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/mobile-backgrounds/eu-flag.jpg"); } }
 
-#nigel-farage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/nigel-farage.jpg"); }
+@media screen and (min-width: 481px) {
+  #stock-market {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/stock-market.jpg"); } }
 
-#david-cameron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/david-cameron.jpg"); }
+@media screen and (max-width: 480px) {
+  #stock-market {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/mobile-backgrounds/stock-market.jpg"); } }
 
-#fish {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/fish.jpg"); }
+@media screen and (min-width: 481px) {
+  #nigel-farage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/nigel-farage.jpg"); } }
 
-#hate-crime {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/hate-crime.jpg"); }
+@media screen and (max-width: 480px) {
+  #nigel-farage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/mobile-backgrounds/nigel-farage.jpg"); } }
 
-#ids {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/ids.jpg"); }
+@media screen and (min-width: 481px) {
+  #david-cameron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/david-cameron.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #david-cameron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/david-cameron.jpg"); } }
+
+@media screen and (min-width: 481px) {
+  #fish {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/fish.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #fish {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/fish.jpg"); } }
+
+@media screen and (min-width: 481px) {
+  #hate-crime {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/hate-crime.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #hate-crime {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/hate-crime.jpg"); } }
+
+@media screen and (min-width: 481px) {
+  #ids {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/ids.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #ids {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/mobile-backgrounds/ids.jpg"); } }
 
 footer {
   text-align: center;

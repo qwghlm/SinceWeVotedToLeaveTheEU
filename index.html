@@ -13,7 +13,7 @@
         <meta property="og:url" content="http://sincewevotedtoleavethe.eu/" />
         <meta property="og:title" content="Since we voted to leave the EU..." />
         <meta property="og:description" content="On June 26th we (as a nation) voted to leave the EU. What's happened since then?" />
-        <meta property="og:image" content="http://sincewevotedtoleavethe.eu/img/backgrounds/nigel-farage.jpg" />
+        <meta property="og:image" content="http://www.sincewevotedtoleavethe.eu/img/backgrounds/nigel-farage.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="800" />
@@ -24,15 +24,13 @@
         <meta name="twitter:creator" content="@chrisapplegate" />
         <meta name="twitter:title" content="Since we voted to leave the EU..." />
         <meta name="twitter:description" content="On June 26th we (as a nation) voted to leave the EU. What's happened since then?" />
-        <meta name="twitter:image" content="http://sincewevotedtoleavethe.eu/img/backgrounds/nigel-farage.jpg" />
+        <meta name="twitter:image" content="http://www.sincewevotedtoleavethe.eu/img/backgrounds/nigel-farage.jpg" />
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <!--
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic' rel='stylesheet' type='text/css'>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-        -->
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     </head>
     <body>
@@ -51,7 +49,7 @@
 
             <section id="">
                 <div class="section-content">
-                    The pound fell from US$1.49 to US$1.33 in two days of trading
+                    The pound fell from US$1.49 to US$1.33 in just two days of trading
 
                     <a href="http://www.bbc.co.uk/news/business-36636853" target="_blank">
                         <i class="fa fa-link fa-flip-horizontal"></i></a>
@@ -66,7 +64,7 @@
                         <i class="fa fa-link fa-flip-horizontal"></i></a>
 
                     <br>
-                    <small>(that's the worst one-day drop ever)</small>
+                    <small>That's the worst one-day drop ever</small>
                 </div>
 
                 <div class="photo-credit" target="_blank">
@@ -230,24 +228,28 @@
         <script src="js/main.js"></script>
 
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            var l = function() {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-80047703-1', 'auto');
+                ga('send', 'pageview');
 
-          ga('create', 'UA-80047703-1', 'auto');
-          ga('send', 'pageview');
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=806088962825023";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            }
+            if (window.addEventListener) { window.addEventListener("load", l, false); }
+            else if (window.attachEvent) { window.attachEvent("onload", l); }
+            else { window.onload = l; }
         </script>
-
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=806088962825023";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 
     </body>
 </html>

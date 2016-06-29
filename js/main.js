@@ -8,14 +8,14 @@ $(function() {
 
     $('main').fullpage({
         sectionSelector : 'section',
-        scrollingSpeed : 600,
+        scrollingSpeed : 700,
         onLeave : function(index, nextIndex, direction) {
             if (index === $('section').length - 1) {
-                $('footer').addClass('active')
+                $('footer').addClass('active');
             }
             else {
-                $('footer').removeClass('active')
+                $('footer').removeClass('active');
             }
         },
     });
-})
+});

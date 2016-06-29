@@ -99,7 +99,8 @@ section {
     }
 
     small {
-        // color: darken(#FAFAFF, 3.0)
+        display: inline-block;
+        margin-top: 0.5em;
     }
 
     a {
@@ -143,7 +144,12 @@ section {
 }
 
 @mixin dimmed-background($imageName, $dimness : 0.4) {
-    background-image: linear-gradient( rgba(0, 0, 0, $dimness), rgba(0, 0, 0, $dimness) ), url('../img/backgrounds/' + $imageName + '.jpg');
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient( rgba(0, 0, 0, $dimness), rgba(0, 0, 0, $dimness) ), url('../img/backgrounds/' + $imageName + '.jpg');
+    }
+    @media screen and (max-width: 480px) {
+        background-image: linear-gradient( rgba(0, 0, 0, $dimness), rgba(0, 0, 0, $dimness) ), url('../img/mobile-backgrounds/' + $imageName + '.jpg');
+    }
 }
 
 #eu-flag {
