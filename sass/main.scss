@@ -46,12 +46,21 @@ a {
     }
 }
 
+main {
+    display: none;
+    opacity: 0;
+    @include transition(opacity 0.6s ease-in);
+
+    &.loaded {
+        display: block;
+        opacity: 1;
+    }
+}
+
 section {
 
-    text-align: center;
-    font-size: 3rem;
-
     position: relative;
+    text-align: center;
 
     background-size: cover;
     background-position: center center;
@@ -69,11 +78,24 @@ section {
         -moz-text-stroke: #333 0.4px;
     }
 
+
     .section-content {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        padding: 0 5rem;
+    }
+
+    @media screen and (min-width: 481px) {
+        font-size: 3rem;
+        .section-content {
+            padding: 0 5rem;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+        .section-content {
+            padding: 0 1rem;
+        }
     }
 
     small {
@@ -111,7 +133,7 @@ section {
 
     .social-share-twitter {
         text-align: right;
-        padding-right: 10px;
+        padding-right: 40px;
     }
 
     .social-share-facebook {
@@ -143,10 +165,8 @@ section {
     @include dimmed-background('hate-crime', 0.5)
 }
 #ids {
-    @include dimmed-background('ids')    
+    @include dimmed-background('ids')
 }
-
-
 
 footer {
 
@@ -162,9 +182,32 @@ footer {
     z-index: 1000;
     bottom: 0;
 
-    height: 0; //4em;
-    line-height: 4em;
+    max-height: 0;
     vertical-align: middle;
+
+    @media screen and (min-width: 481px) {
+        line-height: 4em;
+    }
+    @media screen and (max-width: 480px) {
+        line-height: 1.5em;
+    }
+
+    @include transition(max-height 0.6s ease-in 0.4s);
+
+    &.active {
+
+        height: 1000px;
+
+        @media screen and (min-width: 481px) {
+            max-height: 4em;
+        }
+        @media screen and (max-width: 480px) {
+            max-height: 5em;
+            div {
+                padding-top: 1em;
+            }
+        }
+    }
 }
 
 /*

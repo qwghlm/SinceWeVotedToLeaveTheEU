@@ -387,10 +387,19 @@ a {
     margin-left: 0.2em;
     font-size: 95%; }
 
+main {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-in;
+  -moz-transition: opacity 0.6s ease-in;
+  transition: opacity 0.6s ease-in; }
+  main.loaded {
+    display: block;
+    opacity: 1; }
+
 section {
-  text-align: center;
-  font-size: 3rem;
   position: relative;
+  text-align: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -404,8 +413,17 @@ section {
   section .section-content {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    padding: 0 5rem; }
+    transform: translateY(-50%); }
+  @media screen and (min-width: 481px) {
+    section {
+      font-size: 3rem; }
+      section .section-content {
+        padding: 0 5rem; } }
+  @media screen and (max-width: 480px) {
+    section {
+      font-size: 2rem; }
+      section .section-content {
+        padding: 0 1rem; } }
   section a {
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
@@ -432,7 +450,7 @@ section {
     line-height: 0; }
   .social-share-wrapper .social-share-twitter {
     text-align: right;
-    padding-right: 10px; }
+    padding-right: 40px; }
   .social-share-wrapper .social-share-facebook {
     text-align: left;
     padding-left: 10px; }
@@ -465,11 +483,29 @@ footer {
   position: absolute;
   z-index: 1000;
   bottom: 0;
-  height: 0;
-  line-height: 4em;
-  vertical-align: middle; }
+  max-height: 0;
+  vertical-align: middle;
+  -webkit-transition: max-height 0.6s ease-in 0.4s;
+  -moz-transition: max-height 0.6s ease-in 0.4s;
+  transition: max-height 0.6s ease-in 0.4s; }
   footer a {
     color: #0CCE6B; }
+  @media screen and (min-width: 481px) {
+    footer {
+      line-height: 4em; } }
+  @media screen and (max-width: 480px) {
+    footer {
+      line-height: 1.5em; } }
+  footer.active {
+    height: 1000px; }
+    @media screen and (min-width: 481px) {
+      footer.active {
+        max-height: 4em; } }
+    @media screen and (max-width: 480px) {
+      footer.active {
+        max-height: 5em; }
+        footer.active div {
+          padding-top: 1em; } }
 
 /*
  * Remove text-shadow in selection highlight:
