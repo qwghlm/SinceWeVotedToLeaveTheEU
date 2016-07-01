@@ -170,6 +170,9 @@ section {
 #hate-crime {
     @include dimmed-background('hate-crime', 0.5)
 }
+#boris-johnson {
+    @include dimmed-background('boris-johnson', 0.5)
+}
 #ids {
     @include dimmed-background('ids')
 }
