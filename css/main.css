@@ -507,6 +507,14 @@ section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/hate-crime.jpg"); } }
 
 @media screen and (min-width: 481px) {
+  #boris-johnson {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/boris-johnson.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #boris-johnson {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/boris-johnson.jpg"); } }
+
+@media screen and (min-width: 481px) {
   #ids {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/ids.jpg"); } }
 
