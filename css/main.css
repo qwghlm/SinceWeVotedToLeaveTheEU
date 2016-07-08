@@ -514,6 +514,14 @@ section {
   #ids {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/mobile-backgrounds/ids.jpg"); } }
 
+@media screen and (min-width: 481px) {
+  #property {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/scaffolding.jpg"); } }
+
+@media screen and (max-width: 480px) {
+  #property {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobile-backgrounds/scaffolding.jpg"); } }
+
 footer {
   text-align: center;
   width: 100%;

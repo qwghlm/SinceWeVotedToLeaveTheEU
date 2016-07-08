@@ -173,7 +173,9 @@ section {
 #ids {
     @include dimmed-background('ids')
 }
-
+#property {
+    @include dimmed-background('scaffolding', 0.5)
+}
 footer {
 
     text-align: center;
